@@ -43,6 +43,10 @@ io.sockets.on('connection',
 			socket.broadcast.emit('clicked');
 		} );
 
+		socket.on('aaa', function(){
+			socket.broadcast.emit('bbb');
+		}); 
+
 
 		socket.on('disconnect', function() {
 			console.log("Client has disconnected " + socket.id);

@@ -13,6 +13,8 @@
     
     socket.on('connect', function() {
       console.log("Connected");
+
+      alert('Click the cirlce,  Green=safe');
     });
 
     // listen for socket events from the server
@@ -32,21 +34,19 @@
     'width=' + random(100,windowWidth) + ', height=' + random(100,windowHeight) + ', ' +
     'left=' + random(0,1000) + ', top=' + random(0,1000) + ', ');
 
+      socket.emit('aaa');
+
      
 }
 
 
 
       xx = random(0, windowWidth);
-  yx = random(0, windowHeight);
+  yy = random(0, windowHeight);
   dd = random(25, 500);
 
  
-
-    
-
-
-    });
+});
    
 
 
